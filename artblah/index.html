@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html class="ui-mobile-rendering">
+    <head>
+	<title>ArtBlah</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/jquery.mobile-1.0.1.min.css"/>
+	<link rel="stylesheet" href="css/bootstrap-responsive.css"/>
+	<link rel="stylesheet" href="css/bootstrap.css"/>
+
+	<!-- personal style -->
+	<style type="text/css">
+	    #display {
+		text-align:right;
+		font-size:4em;
+		text-height: max-size;
+		padding:.5em;
+	    }
+
+	    #home {
+		background-color:#ffccff;
+	    }
+
+	    .number {
+		width:20%
+	    }
+	</style>
+
+	<script>
+	    (function($) {
+		var ListView = Backbone.View.extend({
+		    el: $('body'),
+
+		    initialize: function() {
+			_.bindAll(this, 'render');
+
+			this.render();
+		    },
+
+		    render: function() {
+			$(this.el).append("<ul><li>hello world</li></ul>");
+		    }
+		});
+
+		var listView = new ListView();
+	    })(jQuery);
+	</script>
+
+    <!-- The Scripts -->
+    <script src="lib/jquery-1.9.0.js"></script>
+    <script src="lib/jquery-1.7.1.min.js"></script>
+    <script src="js/jqm-config.js"></script>
+    <script src="lib/jquery.mobile-1.0.1.min.js"></script>
+    <script src="lib/underscore-min.js"></script>
+    <script src="lib/backbone-min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body></body>
+
+</html>

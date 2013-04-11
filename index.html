@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html class="ui-mobile-rendering">
+    <head>
+	<title>TopCalc</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/jquery.mobile-1.0.1.min.css"/>
+	<link rel="stylesheet" href="css/bootstrap-responsive.css"/>
+	<link rel="stylesheet" href="css/bootstrap.css"/>
+
+	<!-- personal style -->
+	<style type="text/css">
+	    #display {
+		text-align:right;
+		font-size:4em;
+		text-height: max-size;
+		padding:.5em;
+		padding-right:0px;
+	    }
+
+	    .summary {
+		font-size:1em;
+		border-bottom: .08em dashed burlywood;
+		height:1.2em;
+	    }
+	</style>
+
+	<!-- The Templates -->
+	<script type="text/template" id="home">
+	<div data-role="content" data-theme="e">
+	    <div class="well-small" data-theme="e">
+		<div id="summary" class="summary"></div>
+		<div id="display">0.</div>
+	    </div>
+	    <div class="ui-grid-d">
+		<fieldset class="ui-block-a">
+		    <button type="button" data-theme="a" id="1" class="number" >1</button>
+		    <button type="button" data-theme="a" class="number">4</button>
+		    <button type="button" data-theme="a" class="number">7</button>
+		    <button type="button" data-theme="a" class="number">0</button>
+		</fieldset>
+		<fieldset class="ui-block-b">
+		    <button type="button" data-theme="a" class="number">2</button>
+		    <button type="button" data-theme="a" class="number">5</button>
+		    <button type="button" data-theme="a" class="number">8</button>
+		    <button type="button" data-theme="a" class="dot">.</button>
+		</fieldset>
+		<fieldset class="ui-block-c">
+		    <button type="button" data-theme="a" class="number">3</button>
+		    <button type="button" data-theme="a" class="number">6</button>
+		    <button type="button" data-theme="a" class="number">9</button>
+		    <button type="button" data-theme="a" class="equal">=</button>
+		</fieldset>
+		<fieldset class="ui-block-d">
+		    <button type="button" data-theme="a" class="c">C</button>
+		    <button type="button" data-theme="a" class="sqrt">sqrt</button>
+		    <button type="button" data-theme="a" class="op">+</button>
+		    <button type="button" data-theme="a" class="op">x</button>
+		</fieldset>
+		<fieldset class="ui-block-e">
+		    <button type="button" data-theme="a" class="ac">AC</button>
+		    <button type="button" data-theme="a" class="exp">exp</button>
+		    <button type="button" data-theme="a" class="op">-</button>
+		    <button type="button" data-theme="a" class="op">/</button>
+		</fieldset>
+	    </div>
+	</div>
+    </script>
+
+    <script type="text/template" id="about">
+
+	<div data-role="header">
+	    <a href="#" data-icon="back" class="back ui-btn-left">Back</a>
+	    <h1>About TopCalculator</h1>
+	</div>
+
+	<div data-role="content" style="text-align: center" data-theme="e">
+	    <p>This calculator is a backbone familiarization exercise. Nothing special.</p>
+	    <p>
+		It was designed by: <br />
+	    </p>
+	    <p>
+		<strong>Ezra Obiwale</strong> <br />
+		<a href="mailto:ezra.obiwale@gmail.com">ezra.obiwale@gmail.com</a> <br />
+		<a href="tel:+2348035163756" data-icon="back">+234-803-516-3756</a>
+	    </p>
+	</div>
+	<div data-role="footer">
+	    <marquee><i>Do unto others as you would have them do unto you</i></marquee>
+	</div>
+
+    </script>
+
+    <!-- The Scripts -->
+    <script src="lib/jquery-1.9.0.js"></script>
+    <script src="lib/jquery-1.7.1.min.js"></script>
+    <script src="js/jqm-config.js"></script>
+    <script src="lib/jquery.mobile-1.0.1.min.js"></script>
+    <script src="lib/underscore-min.js"></script>
+    <script src="lib/backbone-min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body></body>
+
+</html>
